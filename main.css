@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 0.875 rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.375rem;
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.357rem;
+  font-weight: 900;
+}
+p {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.625rem;
+  font-weight: 500;
+}
+
+/* MAIN STYLES */
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 375px;
+  padding: 1.5rem;
+  background-image: url('./images/pattern-background-mobile.svg');
+  background-color: hsl(225, 100%, 98%);
+  background-repeat: no-repeat;
+  background-size: 100% 25%;
+}
+
+.card {
+  border-radius: 1.25rem;
+  background-color: white;
+  max-width: 28.125rem;
+  overflow: hidden;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.price-group {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.6875rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.price-group > a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+  overflow: hidden;
+}
+
+.price {
+  padding-right: 1.5rem;
+  padding-left: 0.875rem;
+}
+
+button {
+  all: unset;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  padding: 1rem 3.5rem;
+  border-radius: 0.6875rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.card-text > a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+/* TABLET & UP */
+
+@media (min-width: 475px) {
+  html {
+    font-size: 1 rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+  main {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-color: hsl(225, 100%, 98%);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+  }
+
+  .card-text {
+    padding: 3rem;
+  }
+
+  .price {
+    padding-right: 4.5rem;
+    padding-left: 1.2rem;
+  }
+
+  button {
+    padding: 1rem 6rem;
+  }
+}
