@@ -29,8 +29,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Order summary component Solution](https://your-solution-url.com)
-- Live Site URL: [Order summary component](https://zealous-wright-a92606.netlify.app/)
+- Solution URL: [Order summary component Solution](https://www.frontendmentor.io/solutions/order-summary-component-solution-TndL3EZk6)
+- Live Site URL: [Order summary component](https://fervent-hodgkin-04fc1b.netlify.app/)
 
 ## My process
 
